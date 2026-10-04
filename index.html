@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumit Ghosh | Portfolio Website</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animated Interactive Particle Canvas Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Header / Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <i class="fa-solid fa-compass-drafting"></i> SG<span>.dev</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#languages" class="nav-link">Languages</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fa-regular fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero-container container">
+                <div class="hero-content">
+                    <span class="badge"><i class="fa-solid fa-circle"></i> AVAILABLE FOR PROJECTS</span>
+                    <p class="greeting">Hi, I'm 👋</p>
+                    <h1 class="name">Sumit Ghosh</h1>
+                    <h2 class="title">I am <span class="typed-text" id="typed-text">Web Dev</span>.</h2>
+                    <p class="tagline">Building premium digital experiences with <strong>Design</strong> & <strong>thoughtful interactions</strong>, focused on clarity, performance, and real-world usability.</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="assets/resume.pdf" class="btn btn-primary" download>
+                            <i class="fa-solid fa-file-arrow-down"></i> Download CV <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-social-row">
+                        <a href="#" aria-label="Portfolio"><i class="fa-solid fa-briefcase"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#contact" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-img-wrapper">
+                    <div class="animated-profile-container">
+                        <!-- Outer Rotating Rings / Arches -->
+                        <div class="ring ring-1"></div>
+                        <div class="ring ring-2"></div>
+                        
+                        <!-- Center Profile Picture -->
+                        <div class="profile-avatar">
+                            <img src="images/profile.svg" alt="Sumit Ghosh Profile" id="profile-img">
+                        </div>
+
+                        <!-- Floating Tech Stack Badges -->
+                        <div class="floating-badge badge-html" title="HTML5">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <div class="floating-badge badge-react" title="React">
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+                        <div class="floating-badge badge-js" title="JavaScript">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <div class="floating-badge badge-css" title="CSS3">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <div class="floating-badge badge-python" title="Python">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section-title">About <span>Me</span></h2>
+                <p class="section-subtitle">System Overview & Personal Profile</p>
+
+                <div class="about-grid">
+                    <div class="about-card glass-card">
+                        <h3><i class="fa-solid fa-user-gear"></i> Profile Overview</h3>
+                        <p>I am a passionate Information Technology graduate who has completed my B.Tech degree. I specialize in building modern, scalable web applications and developing end-to-end Machine Learning models that solve practical problems.</p>
+                        <p class="about-highlight">Driven by curiosity and structured logical design, I approach software engineering like an architectural blueprint—built on stability, optimization, and clean execution.</p>
+                    </div>
+
+                    <div class="about-card glass-card">
+                        <h3><i class="fa-solid fa-address-card"></i> Personal Information</h3>
+                        <ul class="info-list">
+                            <li><strong>Father Name:</strong> Kalipada Ghosh</li>
+                            <li><strong>Mother Name:</strong> Sumitra Ghosh</li>
+                            <li><strong>Residential Address:</strong> Hematpur, Chandrakona 1, Paschim Medinipur</li>
+                            <li><strong>Date of Birth:</strong> 29/06/2004</li>
+                            <li><strong>Gender:</strong> Male</li>
+                            <li><strong>Nationality:</strong> Indian</li>
+                            <li><strong>Religion:</strong> Hindu</li>
+                            <li><strong>Place:</strong> West Bengal</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="section-title">Technical <span>Skills</span></h2>
+                <p class="section-subtitle">Core Competencies & Engine Stack</p>
+
+                <div class="skills-grid">
+                    <!-- Progress Bars Column -->
+                    <div class="skills-card glass-card">
+                        <h3><i class="fa-solid fa-layer-group"></i> Proficiency Levels</h3>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML5</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress-line" data-progress="95%"><span style="width: 0%"></span></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CSS3</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-line" data-progress="90%"><span style="width: 0%"></span></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="progress-line" data-progress="88%"><span style="width: 0%"></span></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-line" data-progress="85%"><span style="width: 0%"></span></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MySQL</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-line" data-progress="85%"><span style="width: 0%"></span></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Java</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-line" data-progress="80%"><span style="width: 0%"></span></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Git & GitHub</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-line" data-progress="80%"><span style="width: 0%"></span></div>
+                        </div>
+                    </div>
+
+                    <!-- Category Badges Column -->
+                    <div class="skills-categories">
+                        <div class="category-card glass-card">
+                            <h4><i class="fa-solid fa-code"></i> Frontend</h4>
+                            <div class="tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+
+                        <div class="category-card glass-card">
+                            <h4><i class="fa-solid fa-server"></i> Backend</h4>
+                            <div class="tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Java</span>
+                            </div>
+                        </div>
+
+                        <div class="category-card glass-card">
+                            <h4><i class="fa-solid fa-database"></i> Database</h4>
+                            <div class="tags">
+                                <span class="tag">MySQL</span>
+                            </div>
+                        </div>
+
+                        <div class="category-card glass-card">
+                            <h4><i class="fa-solid fa-screwdrivers-all"></i> Tools</h4>
+                            <div class="tags">
+                                <span class="tag">Git</span>
+                                <span class="tag">GitHub</span>
+                                <span class="tag">VS Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Languages Section -->
+        <section class="languages section" id="languages">
+            <div class="container">
+                <h2 class="section-title">Languages <span>Spoken</span></h2>
+                <p class="section-subtitle">Communication & Fluency</p>
+
+                <div class="language-grid">
+                    <div class="language-card glass-card">
+                        <div class="language-header">
+                            <h3><i class="fa-solid fa-language"></i> English</h3>
+                            <span>Professional</span>
+                        </div>
+                        <div class="language-meter" data-level="85%"><span style="width: 0%"></span></div>
+                        <p>Used for documentation, technical writing, presentations, and collaboration.</p>
+                    </div>
+
+                    <div class="language-card glass-card">
+                        <div class="language-header">
+                            <h3><i class="fa-solid fa-comments"></i> Bengali</h3>
+                            <span>Native</span>
+                        </div>
+                        <div class="language-meter" data-level="100%"><span style="width: 0%"></span></div>
+                        <p>Primary language for daily communication, teamwork, and community interaction.</p>
+                    </div>
+
+                    <div class="language-card glass-card">
+                        <div class="language-header">
+                            <h3><i class="fa-solid fa-people-arrows"></i> Hindi</h3>
+                            <span>Conversational</span>
+                        </div>
+                        <div class="language-meter" data-level="70%"><span style="width: 0%"></span></div>
+                        <p>Comfortable for spoken communication, informal discussion, and general comprehension.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section-title">Featured <span>Projects</span></h2>
+                <p class="section-subtitle">Architectural Builds & Solutions</p>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <i class="fa-solid fa-chart-line project-icon"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Stock Price Prediction</h3>
+                        <p class="project-desc">A predictive analysis web application using LSTM neural networks to forecast equity trends based on historical financial metrics.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Flask</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <i class="fa-solid fa-cart-shopping project-icon"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">E-Commerce Website</h3>
+                        <p class="project-desc">A fully responsive frontend web storefront featuring interactive shopping carts, filtering, dynamic component updates, and modern CSS layout systems.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <i class="fa-solid fa-laptop-code project-icon"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-desc">Interactive, blueprint-themed portfolio designed using vanilla Web technologies with glassmorphism UI principles, accessibility, and high performance.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Timeline -->
+        <section class="education section" id="education">
+            <div class="container">
+                <h2 class="section-title">Education <span>Timeline</span></h2>
+                <p class="section-subtitle">Academic Qualifications & History</p>
+
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2022 - 2026</span>
+                            <h3>B.Tech in Information Technology</h3>
+                            <p class="institution">College of Engineering and Management, Kolaghat</p>
+                            <p>Specializing in modern software engineering, data structures, cloud systems, and machine intelligence models.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right">
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2020 - 2022</span>
+                            <h3>Higher Secondary Education (10+2)</h3>
+                            <p class="institution">Jalsara Ramkrishna High School</p>
+                            <p>Completed higher secondary studies with a primary focus on Pure Sciences (Physics, Chemistry, Mathematics).</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left">
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2020</span>
+                            <h3>Secondary Education (10th)</h3>
+                            <p class="institution">Haimantapur V S High School</p>
+                            <p>Completed secondary education with high distinction in core sciences and mathematics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section class="certificates section" id="certificates">
+            <div class="container">
+                <h2 class="section-title">Certifications & <span>Training</span></h2>
+                <p class="section-subtitle">Verified Skills & Modules</p>
+
+                <div class="certificates-grid">
+                    <div class="cert-card glass-card">
+                        <i class="fa-solid fa-certificate cert-icon"></i>
+                        <h3>Web Design & Development</h3>
+                        <p class="cert-issuer">Skill India Certification</p>
+                        <p class="cert-desc">Covered advanced web layout principles, semantic HTML, modern styling, dynamic script handling, and design fundamentals.</p>
+                    </div>
+
+                    <div class="cert-card glass-card">
+                        <i class="fa-solid fa-award cert-icon"></i>
+                        <h3>Machine Learning Foundations</h3>
+                        <p class="cert-issuer">Online Training Certification</p>
+                        <p class="cert-desc">In-depth training on predictive model engineering, dataset preparation, regression analysis, and neural network pipelines.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get In <span>Touch</span></h2>
+                <p class="section-subtitle">Establish Connection</p>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="info-card glass-card">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>sumit.ghosh@example.com</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card glass-card">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 98765 43210</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card glass-card">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Paschim Medinipur, West Bengal</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container glass-card">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" required placeholder="John Doe">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" required placeholder="john@example.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" required placeholder="Write your message here..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Sumit Ghosh. Designed with Digital Blueprint Principles.</p>
+            <a href="#home" class="back-to-top" aria-label="Back to Top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
+</body>
+</html>
